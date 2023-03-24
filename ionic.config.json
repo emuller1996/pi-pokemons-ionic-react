@@ -1,0 +1,7 @@
+{
+  "name": "pi-pokemons-ionic-react",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
