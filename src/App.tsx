@@ -34,6 +34,8 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import logoPokemons from "./assets/img/pokeball-pokemon.svg"
+
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -41,10 +43,10 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
+          <Route exact path="/pokemons">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/create-pokemon">
             <Tab2 />
           </Route>
           <Route path="/tab3">
@@ -55,13 +57,14 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+          <IonTabButton tab="tab1" href="/pokemons">
+            {/* <IonIcon aria-hidden="true" icon={triangle} /> */}
+            <img src={logoPokemons}  style={ {width:'29px'}} alt="" />
+            <IonLabel>POKEMOS</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab2" href="/create-pokemon">
             <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel>CREAR POKEMON</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={square} />

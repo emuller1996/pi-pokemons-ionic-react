@@ -1,0 +1,29 @@
+.title-pokemon {
+  color: #120a5f;
+  font-weight: 600;
+  font-size: 2.1em;
+}
+
+.card-pokemon {
+    background: rgb(121,120,9);
+    background: radial-gradient(circle, rgba(121,120,9,0.4) 0%, rgba(0,48,255,0.4) 100%);
+}
+.card-pokemon:hover {
+    background: rgb(0,48,255);
+    background: radial-gradient(circle, rgba(0,48,255,0.4) 0%, rgba(121,120,9,0.4) 100%);
+}
+
+.img-pokemon{
+    max-width: 300px;
+    max-height: 250px;
+    min-width: 200px;
+    min-height: 250px;
+}
+.img-container{
+    text-align: center;
+}
+.stat-pokemon-bar{
+    padding: 0.5em;
+    border-radius: 0.4em;
+    
+}
