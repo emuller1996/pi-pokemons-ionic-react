@@ -7,6 +7,7 @@
 .card-pokemon {
     background: rgb(121,120,9);
     background: radial-gradient(circle, rgba(121,120,9,0.4) 0%, rgba(0,48,255,0.4) 100%);
+    border: #120a5f solid 0.14em;
 }
 .card-pokemon:hover {
     background: rgb(0,48,255);
@@ -14,10 +15,10 @@
 }
 
 .img-pokemon{
-    max-width: 300px;
-    max-height: 250px;
-    min-width: 200px;
-    min-height: 250px;
+    max-width: 250px;
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 200px;
 }
 .img-container{
     text-align: center;
