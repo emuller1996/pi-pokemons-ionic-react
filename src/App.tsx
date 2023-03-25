@@ -49,9 +49,9 @@ const App: React.FC = () => (
           <Route exact path="/create-pokemon">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route exact path="/pokemon-detail/:id">
             <Tab3 />
-          </Route>
+          </Route>          
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
@@ -66,10 +66,10 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={ellipse} />
             <IonLabel>CREAR POKEMON</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          {/* <IonTabButton tab="tab3" href="/pokemon-detail">
             <IonIcon aria-hidden="true" icon={square} />
             <IonLabel>Tab 3</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
