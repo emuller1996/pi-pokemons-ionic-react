@@ -1,10 +1,15 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import PokemonDetailComponent from '../components/pokemon-detail';
 import './Tab3.css';
+import { RouteComponentProps, useHistory, useLocation, useParams } from 'react-router';
+
 
 const Tab3: React.FC = () => {
 
   
+  const history =  useHistory()
+  const location = useLocation()
+
   return (
     <IonPage>
       <IonHeader>
@@ -18,7 +23,7 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <PokemonDetailComponent   />
+        <PokemonDetailComponent />
       </IonContent>
     </IonPage>
   );

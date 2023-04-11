@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  IonButton,
   IonCard,
   IonCardContent,
   IonCardHeader,
@@ -11,9 +12,10 @@ import {
 } from "@ionic/react";
 import { Pokemon } from "../../models/Pokemon";
 import "./CardPokemon.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const CardPokemonComponent = (prosps: Pokemon) => {
+  const history = useHistory()
   return (
     <>
       <IonCard className="card-pokemon">
@@ -24,10 +26,12 @@ const CardPokemonComponent = (prosps: Pokemon) => {
             </div>
           </IonCardTitle>
           <IonCardTitle className="title-pokemon"> 
+          <a href={`/pokemon-detail/${prosps.id}`}>{prosps.name}</a>
+            
           
-          <Link to={`/pokemon-detail/${prosps.id}`} >
+          {/* <Link to={`/pokemon-detail/${prosps.id}`} >
             {prosps.name}
-          </Link>
+          </Link> */}
           </IonCardTitle>
         </IonCardHeader>
 

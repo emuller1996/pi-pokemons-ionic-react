@@ -5,6 +5,7 @@ import { CapacitorHttp, HttpResponse } from "@capacitor/core";
 import { PokemonDetaild } from "../../models/PokemonDetails";
 
 
+
 const PokemonDetailComponent: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [loading, setLoading] = useState(true);
@@ -14,9 +15,13 @@ const PokemonDetailComponent: React.FC = () => {
     getPokemonsDetail();
   },[]) */
 
+  
+
   useIonViewDidEnter(() => {
     console.log("useIonViewDidEnter");
     console.log("MONTE>>PokemonDtailComponent");
+
+
     getPokemonsDetail();
 
   },[]);
